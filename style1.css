@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+ 
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+h2 span {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+    margin: 100px 200px;
+   
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+
+
+
+.container > div:nth-of-type(1) {
+
+  background: url('img/shoes-1.jpg');
+  background-position: bottom;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.container > div:nth-of-type(2) {
+    background: url('img/shoes-4.jpg');
+    background-position: bottom;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.container > div:nth-of-type(3) {
+    background: url('img/shoes-6.jpg');
+    background-position: bottom;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+.container > div:nth-of-type(4) {
+    background: url('img/shoes-7.jpg');
+    background-position: bottom;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.container > div:nth-of-type(5) {
+    background: url('img/shoes-8.jpg');
+    background-position: bottom;
+    object-fit: cover;
+    background-repeat: no-repeat;   
+}
+.container > div:nth-of-type(5):hover {
+    opacity: 0.7;
+    transform: scale(0.98);
+    background: url('img/shoes-8.jpg');
+}
+
+
+
+.container > div:nth-of-type(6) {
+ 
+  background: url('img/shoes-2.jpg');
+
+}
+.container > div:nth-of-type(7) {}
+.container > div:nth-of-type(8) {}
+
+
+.container > div:nth-of-type(9) {
+
+  background: url('img/shoes-3.jpg');
+
+}
+
+.container > div:nth-of-type(10) {
+ 
+  background: url('img/shoes-5.jpg');
+
+}
+
+.bg1 {
+    /*background: url('img/shoes-4.jpg');*/
+    color: #333;
+    
+
+}
+
+.bg2 {
+  /*background: url('img/shoes-1.jpg');*/
+  color: #fff;
+}
