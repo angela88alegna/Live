@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="style1.css">
+
+        <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+       
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shoes</title>
+    <title>SHOES</title>
     
 </head>
 <body>
+  <div class="bar">
+<div class="atrasdiv"><a href="reminder.html" class="atras">atras</a></div>
+<h1 class="title">SHOES</h1>
+<div class="carrito">
+<input class="input-field" type="text">
+<i class="fa fa-shopping-cart"aria-hidden="true"></i>
+</div>
+  </div>
+
+
+
+<div class="containerflex">
     <div class="container">
+
         <div class="bg1">
-          <h2>16 <span>| 24</span></h2>
-          <p>Goals Completed</p>
+          <img class="sneakers" src="img/sneakers.png" width="300px" alt="">
+          <h2>16 $ </h2>
         </div>
+
         <div class="bg1">
-          <h2><i class="fas fa-battery-three-quarters"></i></h2>
-          <p>Respiration</p>
+         
+          <h2>24$</h2>
         </div>
+
         <div class="bg2">
           <h2><i class="fas fa-running"></i></h2>
-          <p>Miles</p>
+        </div>
+
+        <div class="bg1">
+          <img class="sneakers" src="img/sneakers.png" width="300px" alt=""> 
+          <h2>98$</h2>
+
+         
+        </div>
+
+        <div class="bg1">
+          <img class="sneakers" src="img/sneakers.png" width="300px" alt="">
+          <h2>88$ </h2>
+
+         
+         
+        </div>
+        <div class="bg2">
+         
+          
         </div>
         <div class="bg1">
-          <h2>36 &deg;</h2>
-          <p>Temperature</p>
+         
+          
         </div>
         <div class="bg1">
-          <h2><i class="fas fa-bed"></i></h2>
-          <p>Sleep Keep</p>
+          <img class="sneakers" src="img/sneakers.png" width="300px" alt="">
+          <h2>98$ </h2>
+
+         
+        
         </div>
         <div class="bg2">
-          <h2>98 <span>bpm</span></h2>
-          <p>Heart Rate</p>
-        </div>
-        <div class="bg1">
-          <h2>170 <span>lbs</span></h2>
-          <p>Weight</p>
-        </div>
-        <div class="bg1">
-          <h2>28 <span>%</span></h2>
-          <p>Fat Percentage</p>
+          <img class="sneakers" src="img/sneakers.png" width="300px" alt="">
+          <h2>98$ </h2>
+          
         </div>
         <div class="bg2">
-          <h2>118 <span>mgdl</span></h2>
-          <p>Blood Glucose</p>
+        
+          
         </div>
         <div class="bg2">
-          <h2>680 <span>kcal</span></h2>
-          <p>AVG Consumption</p>
+         
+          
         </div>
+
         <div class="bg2">
-          <h2><i class="fas fa-dumbbell"></i></h2>
-          <p>Workouts</p>
-        </div>
-        <div class="bg2">
-          <h2>85 <span>%</span></h2>
-          <p>Body Hydration</p>
+          <img class="sneakers" src="img/sneakers.png" width="300px" alt="">
+          <h2>85$</h2>
+          
         </div>
       </div>
+    </div>
+      <script>
+               var zapatos= document.querySelectorAll(".sneakers");
+        document.querySelectorAll(".sneakers").forEach(zapatos => {
+  zapatos.addEventListener('mouseover', event => { zapatos.style.transform = "rotate(-40deg)";
+    //handle click
+  })
+})
+document.querySelectorAll(".sneakers").forEach(zapatos => {
+  zapatos.addEventListener('mouseout', event => { zapatos.style.transform = "rotate(0deg)";
+    //handle click
+  })
+})
+
+
+      </script>
 </body>
 </html>
