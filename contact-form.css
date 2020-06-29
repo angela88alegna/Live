@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{background-color: rgb(179, 218, 167);
+  
+}
+
+/*navbar*/
+
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: center;
+    align-items:center;
+    
+    /*opacity: 90%;
+    z-index: 2;
+    position: fixed;>>header o .navbar queste tre proprieta'?*/
+}
+
+.navbar{
+    display:flex;
+    height: 5em;
+    background-color: rgba(255,255,255,0) ;
+    margin:0;
+    opacity: 90%;
+    z-index: 2;
+    width:100%; 
+}
+
+ .link{
+    text-decoration: none; 
+    font-family: 'Abel', sans-serif;
+    color: #000;
+    border-bottom: 1px solid #000;
+    display:flex;
+       
+}
+   
+.list a:hover {
+        border-bottom: hidden;
+        color:#eee;
+    }
+
+.list{
+    /*display:grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 4em;*/
+    /*nav alla fine*/
+    font-size: medium;
+    flex-basis: 100%;
+    display:flex;
+    justify-content:center;
+   
+   
+    
+}
+
+.list div{
+    margin-right: 15px;
+    display:flex;
+    justify-content: flex-end;
+    
+}
+
+
+.logo{
+    display: flex;
+    margin-top: 4px; 
+    margin-top:50px;
+    margin-left:50px;}
+    /*visibility: hidden; */
+
+    /*form*/
+
+h2{
+    font-family: 'Abel', sans-serif;
+   padding-top: 10%;
+   text-transform: uppercase;
+
+
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width:600px;
+    height: 600px;
+    text-align: center;
+    margin:20px auto;
+    /*border: 1px solid #000;*/
+   
+    background-color: #fff;
+    
+
+}
+
+
+
+
+#textarea1{
+   
+    max-width: 55%;
+    margin:5em ;
+    margin-right: 5em;
+    /*padding:5em;
+    border-radius: 50%;*/
+}
+
+body > div > form > input.name, body > div > form > input.mail{
+max-width: 30%;
+margin-top: 20%;
+}
+
+.submit{
+    font-family: 'Prata', serif;
+background-color: #fff;
+padding: 10px;
+margin-top: 40px;
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+      <!--Import Google Icon Font-->
+ 
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+      
+      <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="contact-form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts-Form</title>
+</head>
+<body>
+
+    
+    
+    <div class="navbar">
+
+        <header>
+            <!--materialize-->
+            <a class="logologo" href= menu.html><div class="logo hide-on-med-and-up"><img src="img/menu_sito.png" width=70px height=70px>
+            </div></a>
+            <!--materialize-->
+                <div class="list hide-on-small-only">
+        
+                    <div class="link1"><a class="link" href="reminder.html">HOME</a> </div>
+                    <div class="link1"><a class="link"  href="shoes.html">SHOES</a> </div>
+                    <div class="link1"><a class="link" href="glasses.html">GLASSES</a> </div>
+                    <div class="link1"><a class="link" href="contact.html">CONTACTS</a> </div>
+                    
+       
+                
+                </div>
+        
+
+        </header>
+
+    </div>
+
+<div class="form">
+    <form action="angela.savino899@gmail.com"  method="GET" class="formulario">
+        <h2>Form</h2>
+        <label for="name">name:</label>
+     <input type="text" class ="name" name="name" placeholder="" >
+
+     <label for="mail">mail:</label>
+
+        <input type="text" class ="mail" name="mail" placeholder="" >
+       
+
+    
+        <textarea id="textarea1" class="materialize-textarea"placeholder="your message"></textarea>
+        <div id="error"></div>
+
+        <div><input type="submit" class="submit"  value="send"></div>
+    </form>
+</div>
+    <script>
+
+const name = document.querySelector(".name");
+const email = document.querySelector(".mail");
+const form = document.querySelector(".form");
+const error = document.getElementById("error");
+var mailFormat= (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+form.addEventListener("submit", (e)=> {
+    let message =[]
+    if (name.value==="null" || name.value===""){
+        message.push("tienes que insertar tu  nombre")
+    }
+    if (email.value.match(mailFormat)){
+       message.push("email valido")
+
+    }
+  // if(email.value.includes("@")){
+   // message.push("gracias por tu email")
+  // }
+   else {
+      message.push("tienes que insertar un email valido")
+   }
+
+if(message.length>0){
+    e.preventDefault()
+    error.innerText = message.join(", ")
+}
+})
+    </script>
+</body>
+</html>

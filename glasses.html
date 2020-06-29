@@ -22,7 +22,7 @@
    
   <div class="bar">
 <div class="atrasdiv"><a href="reminder.html" class="atras">atras</a></div>
-<h1 class="title">SHOES</h1>
+<h1 class="title">GLASSES</h1>
 <div class="carrito">
 <input class="input-field" type="text">
 <i class="fa fa-shopping-cart fa-2x"aria-hidden="true"></i>
@@ -36,8 +36,8 @@
 
         <div class="bg1 bg">
        
-          <img class="sneakers" src="img/sneakers.png" width="300px" alt=""> 
-          <h2>16 $ </h2>
+          <img class="sneakers" src="img/glass.png" width="300px" alt=""> 
+          <h2>26 $ </h2>
           <button class="comment">buy me</button> 
                
           
@@ -47,23 +47,23 @@
 
         <div class="bg2 bg">
       
-          <img class="sneakers" src="img/sneakers2.png" width="300px" alt="">
+          <img class="sneakers" src="img/glass1.png" width="300px" alt="">
         
-            <h2>24 $ </h2>
+            <h2>44 $ </h2>
             <button class="comment">buy me</button> 
                 
          </div>
        
       
         <div class="bg3 bg">
-          <img class="sneakers" src="img/sneakers3.png" width="300px" alt=""> 
-          <h2>98$</h2>
+          <img class="sneakers" src="img/glass2.png" width="300px" alt=""> 
+          <h2>99$</h2>
           <button class="comment">buy me</button>
         </div>
 
         <div class="bg4 bg">
-          <img class="sneakers" src="img/sneakers4.png" width="300px" alt="">
-          <h2>88$ </h2>
+          <img class="sneakers" src="img/glass3.png" width="300px" alt="">
+          <h2>65$ </h2>
           <button class="comment">buy me</button>
         </div>
 
@@ -75,27 +75,28 @@
     <div class="container1">
 
       <div class="bg1">
-        <img class="sneakers" src="img/sneakers.png" width="300px" alt="">
-        <h2>16 $ </h2>
+        <img class="sneakers" src="img/pinkglass.png" width="300px" alt="">
+        <h2>34 $ </h2>
         <button class="comment">buy me</button>
       </div>
 
       <div class="bg2">
-        <img class="sneakers" src="img/sneakers.png" width="300px" alt=""> 
-        <h2>24$</h2>
+        <img class="sneakers" src="img/pinkglass1.png" width="300px" alt=""> 
+        <h2>45$</h2>
         <button class="comment">buy me</button>
       </div>
      
     
       <div class="bg3">
-        <img class="sneakers" src="img/sneakers.png" width="300px" alt=""> 
-        <h2>98$</h2>
+        <img class="sneakers" src="img/pinkglass2.png" width="300px" alt=""> 
+        <h2>65$</h2>
         <button class="comment">buy me</button>
+
       </div>
 
       <div class="bg4">
-        <img class="sneakers" src="img/sneakers.png" width="300px" alt="">
-        <h2>88$ </h2>
+        <img class="sneakers" src="img/pinkglass3.png" width="300px" alt="">
+        <h2>99$ </h2>
         <button class="comment">buy me</button>
       </div>
 
@@ -159,7 +160,7 @@ var zapatillas = document.querySelector("body > div:nth-child(2) > div.bg1.bg > 
 
 zapatillas.addEventListener('click', myFunction);
 zapatillas.addEventListener('mouseout', myFunction2);
-//var precio2= zapatillas.nextElementSibling;////
+var precio2= zapatillas.nextElementSibling;////
 function myFunction()
 
 {    
@@ -168,13 +169,15 @@ var precio = document.querySelector("body > div:nth-child(2) > div.bg1.bg > h2")
 var bodys = document.querySelector("body");
 
  precio.style.color= "#fff";  bodys.style.backgroundColor=" #000";  zapatillas.style.transform = "scale(2.0)"; 
+ zapatillas.style.zIndex= "2";
 }
 
-function myFunction2()
-{
-  var precio = document.querySelector("body > div:nth-child(2) > div.bg1.bg > h2");
-var bodys = document.querySelector("body");
-  precio.style.color= "#000";  bodys.style.backgroundColor=" rgb(240, 234, 234)"; zapatillas.style.transform = "scale(1)"; 
+ function myFunction2()
+ {
+   var precio = document.querySelector("body > div:nth-child(2) > div.bg1.bg > h2");
+ var bodys = document.querySelector("body");
+   precio.style.color= "#000";  bodys.style.backgroundColor=" rgb(240, 234, 234)"; zapatillas.style.transform = "scale(1)";  zapatillas.style.zIndex= "0";
+
 }
 
 
@@ -191,7 +194,7 @@ function myFunction3()
 
   var precio = document.querySelector("body > div:nth-child(2) > div.bg2.bg > h2");
 var bodys = document.querySelector("body");
-precio.style.color= "#fff";  bodys.style.backgroundColor=" #000";  zapatillas.style.transform = "scale(2.0)"; 
+precio.style.color= "#fff";  bodys.style.backgroundColor=" #000";  zapatillas.style.transform = "scale(2.0)"; zapatillas.style.zIndex= "2"
 }
 
 function myFunction4()
@@ -200,7 +203,7 @@ function myFunction4()
 
   var precio = document.querySelector("body > div:nth-child(2) > div.bg2.bg > h2");
 var bodys = document.querySelector("body");
-  precio.style.color= "#000";  bodys.style.backgroundColor=" rgb(240, 234, 234)"; zapatillas.style.transform = "scale(1)";
+  precio.style.color= "#000";  bodys.style.backgroundColor=" rgb(240, 234, 234)"; zapatillas.style.transform = "scale(1)"; zapatillas.style.zIndex= "0"
 }
 
 
@@ -218,7 +221,8 @@ function myFunction5()
 
   var precio = document.querySelector( "body > div:nth-child(2) > div.bg3.bg > h2");
 var bodys = document.querySelector("body");
-precio.style.color= "#fff";  bodys.style.backgroundColor=" #000";  zapatillas.style.transform = "scale(2.0)"; 
+precio.style.color= "#fff";  bodys.style.backgroundColor=" #000";  zapatillas.style.transform = "scale(2.0)";  zapatillas.style.zIndex= "2";
+
 
 }
 
@@ -229,7 +233,8 @@ function myFunction6()
 
   var precio = document.querySelector( "body > div:nth-child(2) > div.bg3.bg > h2");
 var bodys = document.querySelector("body");
-  precio.style.color= "#000";  bodys.style.backgroundColor=" rgb(240, 234, 234)"; zapatillas.style.transform = "scale(1)";
+  precio.style.color= "#000";  bodys.style.backgroundColor=" rgb(240, 234, 234)"; zapatillas.style.transform = "scale(1)";  zapatillas.style.zIndex= "0";
+
 }
 
 //cuarta//
@@ -246,7 +251,7 @@ function myFunction7()
 
   var precio = document.querySelector("body > div:nth-child(2) > div.bg4.bg > h2");
 var bodys = document.querySelector("body");
-precio.style.color= "#fff";  bodys.style.backgroundColor=" #000";  zapatillas.style.transform = "scale(2.0)"; 
+precio.style.color= "#fff";  bodys.style.backgroundColor=" #000";  zapatillas.style.transform = "scale(2.0)"; zapatillas.style.zIndex= "2"
 
 }
 
@@ -257,7 +262,7 @@ function myFunction8()
 
   var precio = document.querySelector("body > div:nth-child(2) > div.bg4.bg > h2");
 var bodys = document.querySelector("body");
-  precio.style.color= "#000";  bodys.style.backgroundColor=" rgb(240, 234, 234)"; zapatillas.style.transform = "scale(1)";
+  precio.style.color= "#000";  bodys.style.backgroundColor=" rgb(240, 234, 234)"; zapatillas.style.transform = "scale(1)";zapatillas.style.zIndex= "0"
 }
 
 

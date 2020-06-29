@@ -25,9 +25,9 @@
                
         
                     <div class="link1"><a class="link" href="#home">HOME</a> </div>
-                    <div class="link1"><a class="link"  href="#my-works">MY WORKS</a> </div>
-                    <div class="link1"><a class="link" href="#who-i-am">WHO I AM</a> </div>
-                    <div class="link1"><a class="link" href="#contacts">CONTACTS</a> </div>
+                    <div class="link1"><a class="link"  href="shoes.html">SHOES</a> </div>
+                    <div class="link1"><a class="link" href="glasses.html">GLASSES</a> </div>
+                    <div class="link1"><a class="link" href="contact.html">CONTACTS</a> </div>
                     
        
                 
@@ -39,12 +39,12 @@
     </div>
    
         
-        <!-- <div>
-        <a class="start">back</a>
+         <div>
+       <!--- <a class="start">back</a>-->
            <div class="anime"><h1>Live</h1></div>
           
-                <a class="stop">next</a>
-                    </div>-->
+                <!--- <a class="stop">next</a>-->
+                    </div>
 
                    
                     <div class="footer footer1">
@@ -75,27 +75,27 @@
 
      let counter =0;
 
-    nextBtn.addEventListener("click", nextImage);
-    prevBtn.addEventListener("click", prevImage);
-                   
-      function nextImage(){
+    //nextBtn.addEventListener("click", nextImage);
+    //prevBtn.addEventListener("click", prevImage);
+
+setInterval(function nextImage(){
          
-          if(counter ===6){
+          if(counter ===4){
           counter=-1;
           }
           counter++;
 
           bodys.style.backgroundImage= `url(img/bcg-${counter}.jpg`
-      } 
+       ;}, 5000);
 
-     function prevImage(){
-          if(counter ===0){
-          counter =7;
-          }
-          counter--;
-          bodys.style.backgroundImage= `url(img/bcg-${counter}.jpg`
+    // function prevImage(){
+        //  if(counter ===0){
+         // counter =7;
+         // }
+         // counter--;
+         // bodys.style.backgroundImage= `url(img/bcg-${counter}.jpg`
           
-        }
+        nextImage();
         
  </script>   
 </body>
